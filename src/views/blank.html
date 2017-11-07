@@ -31,7 +31,7 @@
           <div class="slds-path__scroller" role="application">
             <div class="slds-path__scroller_inner">
               <ul class="slds-path__nav" role="tablist">
-                <li class="slds-path__item slds-is-current slds-is-active" role="presentation">
+                <li class="slds-path__item slds-is-complete " role="presentation">
                   <a aria-controls="path-content-1" aria-expanded="true" aria-selected="false" class="slds-path__link" href="javascript:void(0);"
                     id="path-1" role="tab" tabindex="-1">
                     <span class="slds-path__stage">
@@ -49,7 +49,7 @@
                       </span>&nbsp; Personal Information</span>
                   </a>
                 </li>
-                <li class="slds-path__item slds-is-incomplete" role="presentation">
+                <li class="slds-path__item slds-is-complete" role="presentation">
                   <a aria-controls="path-content-2" aria-expanded="true" aria-selected="false" class="slds-path__link" href="javascript:void(0);"
                     id="path-2" role="tab" tabindex="-1">
                     <span class="slds-path__stage">
@@ -58,10 +58,15 @@
                         /> </svg>
                       <span class="slds-assistive-text">Stage Complete</span>
                     </span>
-                    <span class="slds-path__title">English Translations</span>
+                    
+                    <span class="slds-path__title"><span class="slds-icon_container slds-icon-utility-announcement " title="Description of icon when needed">
+                      <svg style="color:#336fd3 !important" class="slds-icon slds-icon_xx-small" aria-hidden="true">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#replace" /> </svg>
+                      <span class="slds-assistive-text">Description of icon</span>
+                    </span> &nbsp; English Translations</span>
                   </a>
                 </li>
-                <li class="slds-path__item slds-is-incomplete" role="presentation">
+                <li class="slds-path__item slds-is-complete" role="presentation">
                   <a aria-controls="path-content-3" aria-expanded="true" aria-selected="true" class="slds-path__link" href="javascript:void(0);"
                     id="path-3" role="tab" tabindex="0">
                     <span class="slds-path__stage">
@@ -70,29 +75,31 @@
                         /> </svg>
                       <span class="slds-assistive-text">Current Stage:</span>
                     </span>
-                    <span class="slds-path__title">Other Details</span>
+                    
+                    <span class="slds-path__title"><span class="slds-icon_container slds-icon-utility-announcement " title="Description of icon when needed">
+                      <svg style="color:#336fd3 !important" class="slds-icon slds-icon_xx-small" aria-hidden="true">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#questions_and_answers"
+                        /> </svg>
+                      <span class="slds-assistive-text">Description of icon</span>
+                    </span>&nbsp; Other Details</span>
                   </a>
                 </li>
-                <li class="slds-path__item slds-is-incomplete" role="presentation">
-                  <a aria-controls="path-content-4" aria-expanded="true" aria-selected="false" class="slds-path__link" href="javascript:void(0);"
-                    id="path-4" role="tab" tabindex="-1">
+                <li class="slds-path__item slds-is-current slds-is-active" role="presentation">
+                  <a aria-controls="path-content-3" aria-expanded="true" aria-selected="true" class="slds-path__link" href="javascript:void(0);"
+                    id="path-3" role="tab" tabindex="0">
                     <span class="slds-path__stage">
                       <svg class="slds-icon slds-icon_x-small" aria-hidden="true">
                         <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#check"
                         /> </svg>
+                      <span class="slds-assistive-text">Current Stage:</span>
                     </span>
-                    <span class="slds-path__title">Nurturing</span>
-                  </a>
-                </li>
-                <li class="slds-path__item slds-is-incomplete" role="presentation">
-                  <a aria-controls="path-content-5" aria-expanded="true" aria-selected="false" class="slds-path__link" href="javascript:void(0);"
-                    id="path-5" role="tab" tabindex="-1">
-                    <span class="slds-path__stage">
-                      <svg class="slds-icon slds-icon_x-small" aria-hidden="true">
-                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#check"
+                    <span class="slds-icon_container slds-icon-utility-announcement " title="Description of icon when needed">
+                      <svg style="color:#336fd3 !important" class="slds-icon slds-icon_xx-small" aria-hidden="true">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#work_order_type"
                         /> </svg>
+                      <span class="slds-assistive-text">Description of icon</span>
                     </span>
-                    <span class="slds-path__title">Closed</span>
+                    <span class="slds-path__title">&nbsp; Booking/Course Information</span>
                   </a>
                 </li>
               </ul>
@@ -115,19 +122,23 @@
         </div>
         <div class="slds-grid slds-path__action">
           <span class="slds-path__stage-name">Stage: Unqualified</span>
-          <button class="slds-button slds-path__mark-complete slds-button_neutral slds-not-selected">
+          <button class="slds-button slds-path__mark-complete slds-button_brand slds-button_neutral slds-not-selected">
             <svg class="slds-button__icon slds-button__icon_left" aria-hidden="true">
               <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#check"
               /> </svg>Finish Booking</button>
         </div>
       </div>
-      <div aria-labelledby="path-1" class="slds-path__content slds-show" id="path-content-1" role="tabpanel">
+      <div aria-labelledby="path-1" class="slds-path__content slds-hide" id="path-content-1" role="tabpanel">
         <div class="slds-path__coach slds-grid">
-          <div class="slds-path__keys slds-form slds-form_stacked">
+          <div class="slds-path__keys slds-size_1-of-1">
             <div class="slds-grid slds-grid_align-spread slds-path__coach-title">
               <h2>Personalize your detail</h2>
               <button class="slds-button slds-button_reset slds-text-body_small">Edit</button>
             </div>
+          </div>
+        </div>
+        <div class="slds-path__coach slds-grid">
+          <div class="slds-path__keys slds-form slds-form_stacked slds-p-top_none">
             <div class="slds-form slds-form_compound">
               <fieldset class="slds-form-element">
                 <div class="slds-form-element__group">
@@ -169,133 +180,1255 @@
                       </div>
                     </div>
                   </div>
-                  
-                  <div class="slds-form-element__row">
-                    <div class="slds-form-element slds-size_1-of-2">
-                      <label class="slds-form-element__label" for="select-01">
-                        <abbr class="slds-required" title="required">*</abbr>Profession</label>
-                      <div class="slds-form-element__control">
-                        <div class="slds-select_container">
-                          <select class="slds-select" id="select-01" required="">
-                            <option>Other</option>
-                            <option>--Please Select --</option>
-                            <option>Option Two</option>
-                          </select>
+                  <div class="slds-grid slds-p-top_small">
+                    <div class="slds-form-element__row">
+                      <div class="slds-form-element slds-size_1-of-2">
+                        <label class="slds-form-element__label" for="select-01">
+                          <abbr class="slds-required" title="required">*</abbr>Profession</label>
+                        <div class="slds-form-element__control">
+                          <div class="slds-select_container">
+                            <select class="slds-select" id="select-01" required="">
+                              <option>Other</option>
+                              <option>--Please Select --</option>
+                              <option>Option Two</option>
+                            </select>
+                          </div>
                         </div>
                       </div>
+                      <div class="slds-form-element slds-size_1-of-2 slds-p-right_x-small" style="margin-top:0">
+                        <label class="slds-form-element__label" for="input-03">Enter your profession</label>
+                        <input type="text" id="input-03" value="About your profession" class="slds-input"
+                        /> </div>
                     </div>
-                    <div class="slds-form-element slds-size_1-of-2 slds-p-right_x-small" style="margin-top:0">
-                      <label class="slds-form-element__label" for="input-03">Enter your profession</label>
-                      <input type="text" id="input-03" value="About your profession" class="slds-input"
-                      /> </div>
                   </div>
                 </div>
               </fieldset>
+            </div>
+          </div>
+          <div class="slds-path__keys slds-form slds-form_stacked  slds-p-top_none">
+            <div class="slds-form slds-form_compound">
               <fieldset class="slds-form-element">
-                <legend class="slds-form-element__label slds-text-title_caps">Address</legend>
                 <div class="slds-form-element__group">
                   <div class="slds-form-element__row">
                     <div class="slds-form-element slds-size_1-of-1">
-                      <label class="slds-form-element__label" for="input-03">Street</label>
-                      <input type="text" id="input-03" class="slds-input" /> </div>
+                      <label class="slds-form-element__label" for="input-03">Address</label>
+                      <textarea id="textarea-id-01" rows="2" class="slds-textarea" placeholder="431, Vivekananda Rd, Ram Nagar, Coimbatore, Tamil Nadu 641009"></textarea> </div>
                   </div>
-                  <div class="slds-form-element__row">
-                    <div class="slds-form-element slds-size_1-of-2">
-                      <label class="slds-form-element__label" for="input-04">City</label>
-                      <input type="text" id="input-04" class="slds-input" /> </div>
-                    <div class="slds-form-element slds-size_1-of-2">
-                      <label class="slds-form-element__label" for="input-05">State</label>
-                      <input type="text" id="input-05" class="slds-input" /> </div>
+                  <div class="slds-grid">
+                    <div class="slds-form-element slds-size_1-of-3 slds-p-right_x-small" style="margin-top:0">
+                      <label class="slds-form-element__label" for="input-unique-id"> Postal Code
+                        <abbr class="slds-required" title="required">*</abbr>
+                      </label>
+                      <input type="text" id="input-01" value="641001" class="slds-input" /> </div>
+                    <div class="slds-form-element slds-size_1-of-3 slds-p-right_x-small" style="margin-top:0">
+                      <label class="slds-form-element__label" for="input-02">City</label>
+                      <input type="text" id="input-02" value="Coimbatore" class="slds-input" /> </div>
+                    <div class="slds-form-element slds-size_1-of-3" style="margin-top:0">
+                      <label class="slds-form-element__label" for="input-03">State</label>
+                      <select class="slds-select" id="select-01" required="">
+                        <option value="">------------Select State------------</option>
+                        <option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</option>
+                        <option value="Andhra Pradesh">Andhra Pradesh</option>
+                        <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+                        <option value="Assam">Assam</option>
+                        <option value="Bihar">Bihar</option>
+                        <option value="Chandigarh">Chandigarh</option>
+                        <option value="Chhattisgarh">Chhattisgarh</option>
+                        <option value="Dadra and Nagar Haveli">Dadra and Nagar Haveli</option>
+                        <option value="Daman and Diu">Daman and Diu</option>
+                        <option value="Delhi">Delhi</option>
+                        <option value="Goa">Goa</option>
+                        <option value="Gujarat">Gujarat</option>
+                        <option value="Haryana">Haryana</option>
+                        <option value="Himachal Pradesh">Himachal Pradesh</option>
+                        <option value="Jammu and Kashmir">Jammu and Kashmir</option>
+                        <option value="Jharkhand">Jharkhand</option>
+                        <option value="Karnataka">Karnataka</option>
+                        <option value="Kerala">Kerala</option>
+                        <option value="Lakshadweep">Lakshadweep</option>
+                        <option value="Madhya Pradesh">Madhya Pradesh</option>
+                        <option value="Maharashtra">Maharashtra</option>
+                        <option value="Manipur">Manipur</option>
+                        <option value="Meghalaya">Meghalaya</option>
+                        <option value="Mizoram">Mizoram</option>
+                        <option value="Nagaland">Nagaland</option>
+                        <option value="Orissa">Orissa</option>
+                        <option value="Pondicherry">Pondicherry</option>
+                        <option value="Punjab">Punjab</option>
+                        <option value="Rajasthan">Rajasthan</option>
+                        <option value="Sikkim">Sikkim</option>
+                        <option value="Tamil Nadu">Tamil Nadu</option>
+                        <option value="Tripura">Tripura</option>
+                        <option value="Uttaranchal">Uttaranchal</option>
+                        <option value="Uttar Pradesh">Uttar Pradesh</option>
+                        <option value="West Bengal">West Bengal</option>
+                      </select>
+                    </div>
                   </div>
-                  <div class="slds-form-element__row">
-                    <div class="slds-form-element slds-size_1-of-2">
-                      <label class="slds-form-element__label" for="input-06">ZIP Code</label>
-                      <input type="text" id="input-06" class="slds-input" /> </div>
+                  <div class="slds-grid slds-p-top_small">
+                    <div class="slds-form-element__row ">
+                      <div class="slds-form-element slds-size_1-of-2 ">
+                        <label class="slds-form-element__label" for="select-01">
+                          <abbr class="slds-required" title="required">*</abbr>Country of residence</label>
+                        <div class="slds-form-element__control">
+                          <div class="slds-select_container">
+                            <select class="slds-select" id="select-01" required="">
+                              <option value="AF">Afghanistan</option>
+                              <option value="AX">Åland Islands</option>
+                              <option value="AL">Albania</option>
+                              <option value="DZ">Algeria</option>
+                              <option value="AS">American Samoa</option>
+                              <option value="AD">Andorra</option>
+                              <option value="AO">Angola</option>
+                              <option value="AI">Anguilla</option>
+                              <option value="AQ">Antarctica</option>
+                              <option value="AG">Antigua and Barbuda</option>
+                              <option value="AR">Argentina</option>
+                              <option value="AM">Armenia</option>
+                              <option value="AW">Aruba</option>
+                              <option value="AU">Australia</option>
+                              <option value="AT">Austria</option>
+                              <option value="AZ">Azerbaijan</option>
+                              <option value="BS">Bahamas</option>
+                              <option value="BH">Bahrain</option>
+                              <option value="BD">Bangladesh</option>
+                              <option value="BB">Barbados</option>
+                              <option value="BY">Belarus</option>
+                              <option value="BE">Belgium</option>
+                              <option value="BZ">Belize</option>
+                              <option value="BJ">Benin</option>
+                              <option value="BM">Bermuda</option>
+                              <option value="BT">Bhutan</option>
+                              <option value="BO">Bolivia, Plurinational State of</option>
+                              <option value="BQ">Bonaire, Sint Eustatius and Saba</option>
+                              <option value="BA">Bosnia and Herzegovina</option>
+                              <option value="BW">Botswana</option>
+                              <option value="BV">Bouvet Island</option>
+                              <option value="BR">Brazil</option>
+                              <option value="IO">British Indian Ocean Territory</option>
+                              <option value="BN">Brunei Darussalam</option>
+                              <option value="BG">Bulgaria</option>
+                              <option value="BF">Burkina Faso</option>
+                              <option value="BI">Burundi</option>
+                              <option value="KH">Cambodia</option>
+                              <option value="CM">Cameroon</option>
+                              <option value="CA">Canada</option>
+                              <option value="CV">Cape Verde</option>
+                              <option value="KY">Cayman Islands</option>
+                              <option value="CF">Central African Republic</option>
+                              <option value="TD">Chad</option>
+                              <option value="CL">Chile</option>
+                              <option value="CN">China</option>
+                              <option value="CX">Christmas Island</option>
+                              <option value="CC">Cocos (Keeling) Islands</option>
+                              <option value="CO">Colombia</option>
+                              <option value="KM">Comoros</option>
+                              <option value="CG">Congo</option>
+                              <option value="CD">Congo, the Democratic Republic of the</option>
+                              <option value="CK">Cook Islands</option>
+                              <option value="CR">Costa Rica</option>
+                              <option value="CI">Côte d'Ivoire</option>
+                              <option value="HR">Croatia</option>
+                              <option value="CU">Cuba</option>
+                              <option value="CW">Curaçao</option>
+                              <option value="CY">Cyprus</option>
+                              <option value="CZ">Czech Republic</option>
+                              <option value="DK">Denmark</option>
+                              <option value="DJ">Djibouti</option>
+                              <option value="DM">Dominica</option>
+                              <option value="DO">Dominican Republic</option>
+                              <option value="EC">Ecuador</option>
+                              <option value="EG">Egypt</option>
+                              <option value="SV">El Salvador</option>
+                              <option value="GQ">Equatorial Guinea</option>
+                              <option value="ER">Eritrea</option>
+                              <option value="EE">Estonia</option>
+                              <option value="ET">Ethiopia</option>
+                              <option value="FK">Falkland Islands (Malvinas)</option>
+                              <option value="FO">Faroe Islands</option>
+                              <option value="FJ">Fiji</option>
+                              <option value="FI">Finland</option>
+                              <option value="FR">France</option>
+                              <option value="GF">French Guiana</option>
+                              <option value="PF">French Polynesia</option>
+                              <option value="TF">French Southern Territories</option>
+                              <option value="GA">Gabon</option>
+                              <option value="GM">Gambia</option>
+                              <option value="GE">Georgia</option>
+                              <option value="DE">Germany</option>
+                              <option value="GH">Ghana</option>
+                              <option value="GI">Gibraltar</option>
+                              <option value="GR">Greece</option>
+                              <option value="GL">Greenland</option>
+                              <option value="GD">Grenada</option>
+                              <option value="GP">Guadeloupe</option>
+                              <option value="GU">Guam</option>
+                              <option value="GT">Guatemala</option>
+                              <option value="GG">Guernsey</option>
+                              <option value="GN">Guinea</option>
+                              <option value="GW">Guinea-Bissau</option>
+                              <option value="GY">Guyana</option>
+                              <option value="HT">Haiti</option>
+                              <option value="HM">Heard Island and McDonald Islands</option>
+                              <option value="VA">Holy See (Vatican City State)</option>
+                              <option value="HN">Honduras</option>
+                              <option value="HK">Hong Kong</option>
+                              <option value="HU">Hungary</option>
+                              <option value="IS">Iceland</option>
+                              <option value="IN">India</option>
+                              <option value="ID">Indonesia</option>
+                              <option value="IR">Iran, Islamic Republic of</option>
+                              <option value="IQ">Iraq</option>
+                              <option value="IE">Ireland</option>
+                              <option value="IM">Isle of Man</option>
+                              <option value="IL">Israel</option>
+                              <option value="IT">Italy</option>
+                              <option value="JM">Jamaica</option>
+                              <option value="JP">Japan</option>
+                              <option value="JE">Jersey</option>
+                              <option value="JO">Jordan</option>
+                              <option value="KZ">Kazakhstan</option>
+                              <option value="KE">Kenya</option>
+                              <option value="KI">Kiribati</option>
+                              <option value="KP">Korea, Democratic People's Republic of</option>
+                              <option value="KR">Korea, Republic of</option>
+                              <option value="KW">Kuwait</option>
+                              <option value="KG">Kyrgyzstan</option>
+                              <option value="LA">Lao People's Democratic Republic</option>
+                              <option value="LV">Latvia</option>
+                              <option value="LB">Lebanon</option>
+                              <option value="LS">Lesotho</option>
+                              <option value="LR">Liberia</option>
+                              <option value="LY">Libya</option>
+                              <option value="LI">Liechtenstein</option>
+                              <option value="LT">Lithuania</option>
+                              <option value="LU">Luxembourg</option>
+                              <option value="MO">Macao</option>
+                              <option value="MK">Macedonia, the former Yugoslav Republic of</option>
+                              <option value="MG">Madagascar</option>
+                              <option value="MW">Malawi</option>
+                              <option value="MY">Malaysia</option>
+                              <option value="MV">Maldives</option>
+                              <option value="ML">Mali</option>
+                              <option value="MT">Malta</option>
+                              <option value="MH">Marshall Islands</option>
+                              <option value="MQ">Martinique</option>
+                              <option value="MR">Mauritania</option>
+                              <option value="MU">Mauritius</option>
+                              <option value="YT">Mayotte</option>
+                              <option value="MX">Mexico</option>
+                              <option value="FM">Micronesia, Federated States of</option>
+                              <option value="MD">Moldova, Republic of</option>
+                              <option value="MC">Monaco</option>
+                              <option value="MN">Mongolia</option>
+                              <option value="ME">Montenegro</option>
+                              <option value="MS">Montserrat</option>
+                              <option value="MA">Morocco</option>
+                              <option value="MZ">Mozambique</option>
+                              <option value="MM">Myanmar</option>
+                              <option value="NA">Namibia</option>
+                              <option value="NR">Nauru</option>
+                              <option value="NP">Nepal</option>
+                              <option value="NL">Netherlands</option>
+                              <option value="NC">New Caledonia</option>
+                              <option value="NZ">New Zealand</option>
+                              <option value="NI">Nicaragua</option>
+                              <option value="NE">Niger</option>
+                              <option value="NG">Nigeria</option>
+                              <option value="NU">Niue</option>
+                              <option value="NF">Norfolk Island</option>
+                              <option value="MP">Northern Mariana Islands</option>
+                              <option value="NO">Norway</option>
+                              <option value="OM">Oman</option>
+                              <option value="PK">Pakistan</option>
+                              <option value="PW">Palau</option>
+                              <option value="PS">Palestinian Territory, Occupied</option>
+                              <option value="PA">Panama</option>
+                              <option value="PG">Papua New Guinea</option>
+                              <option value="PY">Paraguay</option>
+                              <option value="PE">Peru</option>
+                              <option value="PH">Philippines</option>
+                              <option value="PN">Pitcairn</option>
+                              <option value="PL">Poland</option>
+                              <option value="PT">Portugal</option>
+                              <option value="PR">Puerto Rico</option>
+                              <option value="QA">Qatar</option>
+                              <option value="RE">Réunion</option>
+                              <option value="RO">Romania</option>
+                              <option value="RU">Russian Federation</option>
+                              <option value="RW">Rwanda</option>
+                              <option value="BL">Saint Barthélemy</option>
+                              <option value="SH">Saint Helena, Ascension and Tristan da Cunha</option>
+                              <option value="KN">Saint Kitts and Nevis</option>
+                              <option value="LC">Saint Lucia</option>
+                              <option value="MF">Saint Martin (French part)</option>
+                              <option value="PM">Saint Pierre and Miquelon</option>
+                              <option value="VC">Saint Vincent and the Grenadines</option>
+                              <option value="WS">Samoa</option>
+                              <option value="SM">San Marino</option>
+                              <option value="ST">Sao Tome and Principe</option>
+                              <option value="SA">Saudi Arabia</option>
+                              <option value="SN">Senegal</option>
+                              <option value="RS">Serbia</option>
+                              <option value="SC">Seychelles</option>
+                              <option value="SL">Sierra Leone</option>
+                              <option value="SG">Singapore</option>
+                              <option value="SX">Sint Maarten (Dutch part)</option>
+                              <option value="SK">Slovakia</option>
+                              <option value="SI">Slovenia</option>
+                              <option value="SB">Solomon Islands</option>
+                              <option value="SO">Somalia</option>
+                              <option value="ZA">South Africa</option>
+                              <option value="GS">South Georgia and the South Sandwich Islands</option>
+                              <option value="SS">South Sudan</option>
+                              <option value="ES">Spain</option>
+                              <option value="LK">Sri Lanka</option>
+                              <option value="SD">Sudan</option>
+                              <option value="SR">Suriname</option>
+                              <option value="SJ">Svalbard and Jan Mayen</option>
+                              <option value="SZ">Swaziland</option>
+                              <option value="SE">Sweden</option>
+                              <option value="CH">Switzerland</option>
+                              <option value="SY">Syrian Arab Republic</option>
+                              <option value="TW">Taiwan, Province of China</option>
+                              <option value="TJ">Tajikistan</option>
+                              <option value="TZ">Tanzania, United Republic of</option>
+                              <option value="TH">Thailand</option>
+                              <option value="TL">Timor-Leste</option>
+                              <option value="TG">Togo</option>
+                              <option value="TK">Tokelau</option>
+                              <option value="TO">Tonga</option>
+                              <option value="TT">Trinidad and Tobago</option>
+                              <option value="TN">Tunisia</option>
+                              <option value="TR">Turkey</option>
+                              <option value="TM">Turkmenistan</option>
+                              <option value="TC">Turks and Caicos Islands</option>
+                              <option value="TV">Tuvalu</option>
+                              <option value="UG">Uganda</option>
+                              <option value="UA">Ukraine</option>
+                              <option value="AE">United Arab Emirates</option>
+                              <option value="GB">United Kingdom</option>
+                              <option value="US">United States</option>
+                              <option value="UM">United States Minor Outlying Islands</option>
+                              <option value="UY">Uruguay</option>
+                              <option value="UZ">Uzbekistan</option>
+                              <option value="VU">Vanuatu</option>
+                              <option value="VE">Venezuela, Bolivarian Republic of</option>
+                              <option value="VN">Viet Nam</option>
+                              <option value="VG">Virgin Islands, British</option>
+                              <option value="VI">Virgin Islands, U.S.</option>
+                              <option value="WF">Wallis and Futuna</option>
+                              <option value="EH">Western Sahara</option>
+                              <option value="YE">Yemen</option>
+                              <option value="ZM">Zambia</option>
+                              <option value="ZW">Zimbabwe</option>
+                            </select>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="slds-form-element slds-size_1-of-2 slds-p-right_x-small" style="margin-top:0">
+                        <label class="slds-form-element__label" for="input-03">Region</label>
+                        <input type="text" id="input-03" value="Enter your region" class="slds-input" /> </div>
+                    </div>
                   </div>
                 </div>
               </fieldset>
             </div>
-            <ul>
-              <li class="slds-form-element slds-hint-parent slds-border_bottom slds-form-element_edit">
-                <span class="slds-form-element__label">Nick Name</span>
-                <div class="slds-form-element__control">
-                  <span class="slds-form-element__static">zural</span>
-                  <button class="slds-button slds-button_icon slds-float_right slds-button_icon slds-button_icon-small"
-                    title="Edit this Field">
-                    <svg class="slds-button__icon slds-button__icon_hint" aria-hidden="true">
-                      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#edit"
-                      /> </svg>
-                    <span class="slds-assistive-text">Edit this Field</span>
-                  </button>
-                </div>
-              </li>
-              <li class="slds-form-element slds-hint-parent slds-border_bottom slds-form-element_edit">
-                <label class="slds-form-element__label" for="input-unique-id"> First Name
-                  <abbr class="slds-required" title="required">*</abbr>
-                </label>
-                <div class="slds-form-element__control">
-                  <span class="slds-form-element__static">Shiva</span>
-                  <button class="slds-button slds-button_icon slds-float_right slds-button_icon slds-button_icon-small"
-                    title="Edit this Field">
-                    <svg class="slds-button__icon slds-button__icon_hint" aria-hidden="true">
-                      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#edit"
-                      /> </svg>
-                    <span class="slds-assistive-text">Edit this Field</span>
-                  </button>
-                </div>
-              </li>
-              <li class="slds-form-element slds-hint-parent slds-border_bottom slds-form-element_edit">
-                <span class="slds-form-element__label">Middle Name</span>
-                <div class="slds-form-element__control">
-                  <span class="slds-form-element__static"></span>
-                  <button class="slds-button slds-button_icon slds-float_right slds-button_icon slds-button_icon-small"
-                    title="Edit this Field">
-                    <svg class="slds-button__icon slds-button__icon_hint" aria-hidden="true">
-                      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#edit"
-                      /> </svg>
-                    <span class="slds-assistive-text">Edit this Field</span>
-                  </button>
-                </div>
-              </li>
-              <li class="slds-form-element slds-hint-parent slds-border_bottom slds-form-element_edit">
-                <span class="slds-form-element__label">Support Engineer</span>
-                <div class="slds-form-element__control">
-                  <span class="slds-form-element__static">Jack Arthur</span>
-                  <button class="slds-button slds-button_icon slds-float_right slds-button_icon slds-button_icon-small"
-                    title="Edit this Field">
-                    <svg class="slds-button__icon slds-button__icon_hint" aria-hidden="true">
-                      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#edit"
-                      /> </svg>
-                    <span class="slds-assistive-text">Edit this Field</span>
-                  </button>
-                </div>
-              </li>
-            </ul>
           </div>
-          <div class="slds-path__guidance">
-            <h2 class="slds-path__coach-title">Guidance for Success</h2>
-            <div class="slds-text-longform slds-path__guidance-content">
-              <p>Regularly cross-sell related products using
-                <a href="javascript:void(0);">cross-sell tactics and principles</a>.</p>
-              <p>Prepare demo deck using the
-                <a href="javascript:void(0);">latest template</a> and review with Marketing and Sales teams. Review demo copy with Legal and Doc team.</p>
-              <p>Look up
-                <a href="javascript:void(0);">needs analysis principles</a> and review selling plan with Sales Engineer.</p>
-            </div>
+        </div>
+        <div class="slds-path__coach slds-grid ">
+          <div class="slds-path__keys slds-form slds-form_stacked ">
+            <button class="slds-button slds-button_stateful slds-not-selected slds-button_brand" aria-live="assertive">
+              <span class="slds-text-not-selected">
+                <svg class="slds-button__icon_stateful slds-button__icon_left" aria-hidden="true">
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#back"
+                  /> </svg>Back</span>
+            </button>
+            <button class="slds-button slds-button_stateful slds-not-selected slds-button_brand" aria-live="assertive">
+              <span class="slds-text-not-selected">
+                <svg class="slds-button__icon_stateful slds-button__icon_left" aria-hidden="true">
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#chevronright"
+                  /> </svg>Continue</span>
+            </button>
           </div>
         </div>
       </div>
       <div aria-labelledby="path-2" class="slds-path__content slds-hide" id="path-content-2" role="tabpanel">
-        <h2>Path 2 Content</h2>
+        <div class="slds-path__coach slds-grid">
+          <div class="slds-path__keys slds-size_1-of-1">
+            <div class="slds-grid slds-grid_align-spread slds-path__coach-title">
+              <h2>Personalize your language</h2>
+              <button class="slds-button slds-button_reset slds-text-body_small">Edit</button>
+            </div>
+          </div>
+        </div>
+        <div class="slds-path__coach slds-grid">
+          <div class="slds-path__keys slds-form slds-form_stacked slds-p-top_none">
+            <div class="slds-form slds-form_compound">
+              <fieldset class="slds-form-element">
+                <div class="slds-form-element__group">
+                  <div class="slds-form-element__row">
+                    <div class="slds-form-element slds-size_1-of-1">
+                      <label class="slds-form-element__label" for="select-01">
+                        <abbr class="slds-required" title="required">*</abbr>Select native language</label>
+                      <div class="slds-form-element__control">
+                        <div class="slds-select_container">
+                          <select class="slds-select" id="select-01" required="">
+                            <option>English</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="slds-grid">
+                    <div class="slds-form-element slds-size_1-of-2 slds-p-right_x-small" style="margin-top:0">
+                      <label class="slds-form-element__label" for="input-unique-id"> English First Name
+                        <abbr class="slds-required" title="required">*</abbr>
+                      </label>
+                      <input type="text" id="input-01" value="Shiva" class="slds-input" /> </div>
+                    <div class="slds-form-element slds-size_1-of-2 slds-p-right_x-small" style="margin-top:0">
+                      <label class="slds-form-element__label" for="input-02">English Last Name</label>
+                      <input type="text" id="input-02" class="slds-input" /> </div>
+                  </div>
+                </div>
+              </fieldset>
+            </div>
+          </div>
+          <div class="slds-path__keys slds-form slds-form_stacked  slds-p-top_none">
+            <div class="slds-form slds-form_compound">
+              <fieldset class="slds-form-element">
+                <div class="slds-form-element__group">
+                  <div class="slds-form-element__row">
+                    <div class="slds-form-element slds-size_1-of-1">
+                      <label class="slds-form-element__label" for="input-03">English Address</label>
+                      <textarea id="textarea-id-01" rows="2" class="slds-textarea" placeholder="Enter your address"></textarea> </div>
+                  </div>
+                  <div class="slds-grid">
+                    <div class="slds-form-element slds-size_1-of-3 slds-p-right_x-small" style="margin-top:0">
+                      <label class="slds-form-element__label" for="input-unique-id">English Postal Code
+                        <abbr class="slds-required" title="required">*</abbr>
+                      </label>
+                      <input type="text" id="input-01" value="641001" class="slds-input" /> </div>
+                    <div class="slds-form-element slds-size_1-of-3 slds-p-right_x-small" style="margin-top:0">
+                      <label class="slds-form-element__label" for="input-02">English City</label>
+                      <input type="text" id="input-02" class="slds-input" /> </div>
+                    <div class="slds-form-element slds-size_1-of-3" style="margin-top:0">
+                      <label class="slds-form-element__label" for="input-03">English State</label>
+                      <select class="slds-select" id="select-01" required="">
+                        <option value="AF">Afrikanns</option>
+                        <option value="SQ">Albanian</option>
+                        <option value="AR">Arabic</option>
+                        <option value="HY">Armenian</option>
+                        <option value="EU">Basque</option>
+                        <option value="BN">Bengali</option>
+                        <option value="BG">Bulgarian</option>
+                        <option value="CA">Catalan</option>
+                        <option value="KM">Cambodian</option>
+                        <option value="ZH">Chinese (Mandarin)</option>
+                        <option value="HR">Croation</option>
+                        <option value="CS">Czech</option>
+                        <option value="DA">Danish</option>
+                        <option value="NL">Dutch</option>
+                        <option value="EN">English</option>
+                        <option value="ET">Estonian</option>
+                        <option value="FJ">Fiji</option>
+                        <option value="FI">Finnish</option>
+                        <option value="FR">French</option>
+                        <option value="KA">Georgian</option>
+                        <option value="DE">German</option>
+                        <option value="EL">Greek</option>
+                        <option value="GU">Gujarati</option>
+                        <option value="HE">Hebrew</option>
+                        <option value="HI">Hindi</option>
+                        <option value="HU">Hungarian</option>
+                        <option value="IS">Icelandic</option>
+                        <option value="ID">Indonesian</option>
+                        <option value="GA">Irish</option>
+                        <option value="IT">Italian</option>
+                        <option value="JA">Japanese</option>
+                        <option value="JW">Javanese</option>
+                        <option value="KO">Korean</option>
+                        <option value="LA">Latin</option>
+                        <option value="LV">Latvian</option>
+                        <option value="LT">Lithuanian</option>
+                        <option value="MK">Macedonian</option>
+                        <option value="MS">Malay</option>
+                        <option value="ML">Malayalam</option>
+                        <option value="MT">Maltese</option>
+                        <option value="MI">Maori</option>
+                        <option value="MR">Marathi</option>
+                        <option value="MN">Mongolian</option>
+                        <option value="NE">Nepali</option>
+                        <option value="NO">Norwegian</option>
+                        <option value="FA">Persian</option>
+                        <option value="PL">Polish</option>
+                        <option value="PT">Portuguese</option>
+                        <option value="PA">Punjabi</option>
+                        <option value="QU">Quechua</option>
+                        <option value="RO">Romanian</option>
+                        <option value="RU">Russian</option>
+                        <option value="SM">Samoan</option>
+                        <option value="SR">Serbian</option>
+                        <option value="SK">Slovak</option>
+                        <option value="SL">Slovenian</option>
+                        <option value="ES">Spanish</option>
+                        <option value="SW">Swahili</option>
+                        <option value="SV">Swedish </option>
+                        <option value="TA">Tamil</option>
+                        <option value="TT">Tatar</option>
+                        <option value="TE">Telugu</option>
+                        <option value="TH">Thai</option>
+                        <option value="BO">Tibetan</option>
+                        <option value="TO">Tonga</option>
+                        <option value="TR">Turkish</option>
+                        <option value="UK">Ukranian</option>
+                        <option value="UR">Urdu</option>
+                        <option value="UZ">Uzbek</option>
+                        <option value="VI">Vietnamese</option>
+                        <option value="CY">Welsh</option>
+                        <option value="XH">Xhosa</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </fieldset>
+            </div>
+          </div>
+        </div>
+        <div class="slds-path__coach slds-grid ">
+          <div class="slds-path__keys slds-form slds-form_stacked ">
+            <button class="slds-button slds-button_stateful slds-not-selected slds-button_brand" aria-live="assertive">
+              <span class="slds-text-not-selected">
+                <svg class="slds-button__icon_stateful slds-button__icon_left" aria-hidden="true">
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#back"
+                  /> </svg>Back</span>
+            </button>
+            <button class="slds-button slds-button_stateful slds-not-selected slds-button_brand" aria-live="assertive">
+              <span class="slds-text-not-selected">
+                <svg class="slds-button__icon_stateful slds-button__icon_left" aria-hidden="true">
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#chevronright"
+                  /> </svg>Continue</span>
+            </button>
+          </div>
+        </div>
       </div>
       <div aria-labelledby="path-3" class="slds-path__content slds-hide" id="path-content-3" role="tabpanel">
-        <h2>Path 3 Content</h2>
+        <div class="slds-path__coach slds-grid">
+          <div class="slds-path__keys slds-size_1-of-1">
+            <div class="slds-grid slds-grid_align-spread slds-path__coach-title">
+              <h2>Personalize your preliminary details</h2>
+              <button class="slds-button slds-button_reset slds-text-body_small">Edit</button>
+            </div>
+          </div>
+        </div>
+        <div class="slds-path__coach slds-grid">
+          <div class="slds-path__keys slds-form slds-form_stacked slds-p-top_none">
+            <div class="slds-grid slds-p-bottom_small">
+              <div class="slds-form-element slds-size_1-of-2 slds-p-right_x-small" style="margin-top:0">
+                <label class="slds-form-element__label" for="input-unique-id">Nationality
+                  <abbr class="slds-required" title="required">*</abbr>
+                </label>
+                <select class="slds-select" id="select-01" required="">
+                  <option value="">-- select one --</option>
+                  <option value="afghan">Afghan</option>
+                  <option value="albanian">Albanian</option>
+                  <option value="algerian">Algerian</option>
+                  <option value="american">American</option>
+                  <option value="andorran">Andorran</option>
+                  <option value="angolan">Angolan</option>
+                  <option value="antiguans">Antiguans</option>
+                  <option value="argentinean">Argentinean</option>
+                  <option value="armenian">Armenian</option>
+                  <option value="australian">Australian</option>
+                  <option value="austrian">Austrian</option>
+                  <option value="azerbaijani">Azerbaijani</option>
+                  <option value="bahamian">Bahamian</option>
+                  <option value="bahraini">Bahraini</option>
+                  <option value="bangladeshi">Bangladeshi</option>
+                  <option value="barbadian">Barbadian</option>
+                  <option value="barbudans">Barbudans</option>
+                  <option value="batswana">Batswana</option>
+                  <option value="belarusian">Belarusian</option>
+                  <option value="belgian">Belgian</option>
+                  <option value="belizean">Belizean</option>
+                  <option value="beninese">Beninese</option>
+                  <option value="bhutanese">Bhutanese</option>
+                  <option value="bolivian">Bolivian</option>
+                  <option value="bosnian">Bosnian</option>
+                  <option value="brazilian">Brazilian</option>
+                  <option value="british">British</option>
+                  <option value="bruneian">Bruneian</option>
+                  <option value="bulgarian">Bulgarian</option>
+                  <option value="burkinabe">Burkinabe</option>
+                  <option value="burmese">Burmese</option>
+                  <option value="burundian">Burundian</option>
+                  <option value="cambodian">Cambodian</option>
+                  <option value="cameroonian">Cameroonian</option>
+                  <option value="canadian">Canadian</option>
+                  <option value="cape verdean">Cape Verdean</option>
+                  <option value="central african">Central African</option>
+                  <option value="chadian">Chadian</option>
+                  <option value="chilean">Chilean</option>
+                  <option value="chinese">Chinese</option>
+                  <option value="colombian">Colombian</option>
+                  <option value="comoran">Comoran</option>
+                  <option value="congolese">Congolese</option>
+                  <option value="costa rican">Costa Rican</option>
+                  <option value="croatian">Croatian</option>
+                  <option value="cuban">Cuban</option>
+                  <option value="cypriot">Cypriot</option>
+                  <option value="czech">Czech</option>
+                  <option value="danish">Danish</option>
+                  <option value="djibouti">Djibouti</option>
+                  <option value="dominican">Dominican</option>
+                  <option value="dutch">Dutch</option>
+                  <option value="east timorese">East Timorese</option>
+                  <option value="ecuadorean">Ecuadorean</option>
+                  <option value="egyptian">Egyptian</option>
+                  <option value="emirian">Emirian</option>
+                  <option value="equatorial guinean">Equatorial Guinean</option>
+                  <option value="eritrean">Eritrean</option>
+                  <option value="estonian">Estonian</option>
+                  <option value="ethiopian">Ethiopian</option>
+                  <option value="fijian">Fijian</option>
+                  <option value="filipino">Filipino</option>
+                  <option value="finnish">Finnish</option>
+                  <option value="french">French</option>
+                  <option value="gabonese">Gabonese</option>
+                  <option value="gambian">Gambian</option>
+                  <option value="georgian">Georgian</option>
+                  <option value="german">German</option>
+                  <option value="ghanaian">Ghanaian</option>
+                  <option value="greek">Greek</option>
+                  <option value="grenadian">Grenadian</option>
+                  <option value="guatemalan">Guatemalan</option>
+                  <option value="guinea-bissauan">Guinea-Bissauan</option>
+                  <option value="guinean">Guinean</option>
+                  <option value="guyanese">Guyanese</option>
+                  <option value="haitian">Haitian</option>
+                  <option value="herzegovinian">Herzegovinian</option>
+                  <option value="honduran">Honduran</option>
+                  <option value="hungarian">Hungarian</option>
+                  <option value="icelander">Icelander</option>
+                  <option value="indian">Indian</option>
+                  <option value="indonesian">Indonesian</option>
+                  <option value="iranian">Iranian</option>
+                  <option value="iraqi">Iraqi</option>
+                  <option value="irish">Irish</option>
+                  <option value="israeli">Israeli</option>
+                  <option value="italian">Italian</option>
+                  <option value="ivorian">Ivorian</option>
+                  <option value="jamaican">Jamaican</option>
+                  <option value="japanese">Japanese</option>
+                  <option value="jordanian">Jordanian</option>
+                  <option value="kazakhstani">Kazakhstani</option>
+                  <option value="kenyan">Kenyan</option>
+                  <option value="kittian and nevisian">Kittian and Nevisian</option>
+                  <option value="kuwaiti">Kuwaiti</option>
+                  <option value="kyrgyz">Kyrgyz</option>
+                  <option value="laotian">Laotian</option>
+                  <option value="latvian">Latvian</option>
+                  <option value="lebanese">Lebanese</option>
+                  <option value="liberian">Liberian</option>
+                  <option value="libyan">Libyan</option>
+                  <option value="liechtensteiner">Liechtensteiner</option>
+                  <option value="lithuanian">Lithuanian</option>
+                  <option value="luxembourger">Luxembourger</option>
+                  <option value="macedonian">Macedonian</option>
+                  <option value="malagasy">Malagasy</option>
+                  <option value="malawian">Malawian</option>
+                  <option value="malaysian">Malaysian</option>
+                  <option value="maldivan">Maldivan</option>
+                  <option value="malian">Malian</option>
+                  <option value="maltese">Maltese</option>
+                  <option value="marshallese">Marshallese</option>
+                  <option value="mauritanian">Mauritanian</option>
+                  <option value="mauritian">Mauritian</option>
+                  <option value="mexican">Mexican</option>
+                  <option value="micronesian">Micronesian</option>
+                  <option value="moldovan">Moldovan</option>
+                  <option value="monacan">Monacan</option>
+                  <option value="mongolian">Mongolian</option>
+                  <option value="moroccan">Moroccan</option>
+                  <option value="mosotho">Mosotho</option>
+                  <option value="motswana">Motswana</option>
+                  <option value="mozambican">Mozambican</option>
+                  <option value="namibian">Namibian</option>
+                  <option value="nauruan">Nauruan</option>
+                  <option value="nepalese">Nepalese</option>
+                  <option value="new zealander">New Zealander</option>
+                  <option value="ni-vanuatu">Ni-Vanuatu</option>
+                  <option value="nicaraguan">Nicaraguan</option>
+                  <option value="nigerien">Nigerien</option>
+                  <option value="north korean">North Korean</option>
+                  <option value="northern irish">Northern Irish</option>
+                  <option value="norwegian">Norwegian</option>
+                  <option value="omani">Omani</option>
+                  <option value="pakistani">Pakistani</option>
+                  <option value="palauan">Palauan</option>
+                  <option value="panamanian">Panamanian</option>
+                  <option value="papua new guinean">Papua New Guinean</option>
+                  <option value="paraguayan">Paraguayan</option>
+                  <option value="peruvian">Peruvian</option>
+                  <option value="polish">Polish</option>
+                  <option value="portuguese">Portuguese</option>
+                  <option value="qatari">Qatari</option>
+                  <option value="romanian">Romanian</option>
+                  <option value="russian">Russian</option>
+                  <option value="rwandan">Rwandan</option>
+                  <option value="saint lucian">Saint Lucian</option>
+                  <option value="salvadoran">Salvadoran</option>
+                  <option value="samoan">Samoan</option>
+                  <option value="san marinese">San Marinese</option>
+                  <option value="sao tomean">Sao Tomean</option>
+                  <option value="saudi">Saudi</option>
+                  <option value="scottish">Scottish</option>
+                  <option value="senegalese">Senegalese</option>
+                  <option value="serbian">Serbian</option>
+                  <option value="seychellois">Seychellois</option>
+                  <option value="sierra leonean">Sierra Leonean</option>
+                  <option value="singaporean">Singaporean</option>
+                  <option value="slovakian">Slovakian</option>
+                  <option value="slovenian">Slovenian</option>
+                  <option value="solomon islander">Solomon Islander</option>
+                  <option value="somali">Somali</option>
+                  <option value="south african">South African</option>
+                  <option value="south korean">South Korean</option>
+                  <option value="spanish">Spanish</option>
+                  <option value="sri lankan">Sri Lankan</option>
+                  <option value="sudanese">Sudanese</option>
+                  <option value="surinamer">Surinamer</option>
+                  <option value="swazi">Swazi</option>
+                  <option value="swedish">Swedish</option>
+                  <option value="swiss">Swiss</option>
+                  <option value="syrian">Syrian</option>
+                  <option value="taiwanese">Taiwanese</option>
+                  <option value="tajik">Tajik</option>
+                  <option value="tanzanian">Tanzanian</option>
+                  <option value="thai">Thai</option>
+                  <option value="togolese">Togolese</option>
+                  <option value="tongan">Tongan</option>
+                  <option value="trinidadian or tobagonian">Trinidadian or Tobagonian</option>
+                  <option value="tunisian">Tunisian</option>
+                  <option value="turkish">Turkish</option>
+                  <option value="tuvaluan">Tuvaluan</option>
+                  <option value="ugandan">Ugandan</option>
+                  <option value="ukrainian">Ukrainian</option>
+                  <option value="uruguayan">Uruguayan</option>
+                  <option value="uzbekistani">Uzbekistani</option>
+                  <option value="venezuelan">Venezuelan</option>
+                  <option value="vietnamese">Vietnamese</option>
+                  <option value="welsh">Welsh</option>
+                  <option value="yemenite">Yemenite</option>
+                  <option value="zambian">Zambian</option>
+                  <option value="zimbabwean">Zimbabwean</option>
+                </select>
+              </div>
+              <div class="slds-form-element slds-size_1-of-2" style="margin-top:0">
+                <label class="slds-form-element__label" for="input-03">Country of Birth</label>
+                <select class="slds-select" id="select-01" required="">
+                  <option value="AF">Afghanistan</option>
+                  <option value="AX">Åland Islands</option>
+                  <option value="AL">Albania</option>
+                  <option value="DZ">Algeria</option>
+                  <option value="AS">American Samoa</option>
+                  <option value="AD">Andorra</option>
+                  <option value="AO">Angola</option>
+                  <option value="AI">Anguilla</option>
+                  <option value="AQ">Antarctica</option>
+                  <option value="AG">Antigua and Barbuda</option>
+                  <option value="AR">Argentina</option>
+                  <option value="AM">Armenia</option>
+                  <option value="AW">Aruba</option>
+                  <option value="AU">Australia</option>
+                  <option value="AT">Austria</option>
+                  <option value="AZ">Azerbaijan</option>
+                  <option value="BS">Bahamas</option>
+                  <option value="BH">Bahrain</option>
+                  <option value="BD">Bangladesh</option>
+                  <option value="BB">Barbados</option>
+                  <option value="BY">Belarus</option>
+                  <option value="BE">Belgium</option>
+                  <option value="BZ">Belize</option>
+                  <option value="BJ">Benin</option>
+                  <option value="BM">Bermuda</option>
+                  <option value="BT">Bhutan</option>
+                  <option value="BO">Bolivia, Plurinational State of</option>
+                  <option value="BQ">Bonaire, Sint Eustatius and Saba</option>
+                  <option value="BA">Bosnia and Herzegovina</option>
+                  <option value="BW">Botswana</option>
+                  <option value="BV">Bouvet Island</option>
+                  <option value="BR">Brazil</option>
+                  <option value="IO">British Indian Ocean Territory</option>
+                  <option value="BN">Brunei Darussalam</option>
+                  <option value="BG">Bulgaria</option>
+                  <option value="BF">Burkina Faso</option>
+                  <option value="BI">Burundi</option>
+                  <option value="KH">Cambodia</option>
+                  <option value="CM">Cameroon</option>
+                  <option value="CA">Canada</option>
+                  <option value="CV">Cape Verde</option>
+                  <option value="KY">Cayman Islands</option>
+                  <option value="CF">Central African Republic</option>
+                  <option value="TD">Chad</option>
+                  <option value="CL">Chile</option>
+                  <option value="CN">China</option>
+                  <option value="CX">Christmas Island</option>
+                  <option value="CC">Cocos (Keeling) Islands</option>
+                  <option value="CO">Colombia</option>
+                  <option value="KM">Comoros</option>
+                  <option value="CG">Congo</option>
+                  <option value="CD">Congo, the Democratic Republic of the</option>
+                  <option value="CK">Cook Islands</option>
+                  <option value="CR">Costa Rica</option>
+                  <option value="CI">Côte d'Ivoire</option>
+                  <option value="HR">Croatia</option>
+                  <option value="CU">Cuba</option>
+                  <option value="CW">Curaçao</option>
+                  <option value="CY">Cyprus</option>
+                  <option value="CZ">Czech Republic</option>
+                  <option value="DK">Denmark</option>
+                  <option value="DJ">Djibouti</option>
+                  <option value="DM">Dominica</option>
+                  <option value="DO">Dominican Republic</option>
+                  <option value="EC">Ecuador</option>
+                  <option value="EG">Egypt</option>
+                  <option value="SV">El Salvador</option>
+                  <option value="GQ">Equatorial Guinea</option>
+                  <option value="ER">Eritrea</option>
+                  <option value="EE">Estonia</option>
+                  <option value="ET">Ethiopia</option>
+                  <option value="FK">Falkland Islands (Malvinas)</option>
+                  <option value="FO">Faroe Islands</option>
+                  <option value="FJ">Fiji</option>
+                  <option value="FI">Finland</option>
+                  <option value="FR">France</option>
+                  <option value="GF">French Guiana</option>
+                  <option value="PF">French Polynesia</option>
+                  <option value="TF">French Southern Territories</option>
+                  <option value="GA">Gabon</option>
+                  <option value="GM">Gambia</option>
+                  <option value="GE">Georgia</option>
+                  <option value="DE">Germany</option>
+                  <option value="GH">Ghana</option>
+                  <option value="GI">Gibraltar</option>
+                  <option value="GR">Greece</option>
+                  <option value="GL">Greenland</option>
+                  <option value="GD">Grenada</option>
+                  <option value="GP">Guadeloupe</option>
+                  <option value="GU">Guam</option>
+                  <option value="GT">Guatemala</option>
+                  <option value="GG">Guernsey</option>
+                  <option value="GN">Guinea</option>
+                  <option value="GW">Guinea-Bissau</option>
+                  <option value="GY">Guyana</option>
+                  <option value="HT">Haiti</option>
+                  <option value="HM">Heard Island and McDonald Islands</option>
+                  <option value="VA">Holy See (Vatican City State)</option>
+                  <option value="HN">Honduras</option>
+                  <option value="HK">Hong Kong</option>
+                  <option value="HU">Hungary</option>
+                  <option value="IS">Iceland</option>
+                  <option value="IN">India</option>
+                  <option value="ID">Indonesia</option>
+                  <option value="IR">Iran, Islamic Republic of</option>
+                  <option value="IQ">Iraq</option>
+                  <option value="IE">Ireland</option>
+                  <option value="IM">Isle of Man</option>
+                  <option value="IL">Israel</option>
+                  <option value="IT">Italy</option>
+                  <option value="JM">Jamaica</option>
+                  <option value="JP">Japan</option>
+                  <option value="JE">Jersey</option>
+                  <option value="JO">Jordan</option>
+                  <option value="KZ">Kazakhstan</option>
+                  <option value="KE">Kenya</option>
+                  <option value="KI">Kiribati</option>
+                  <option value="KP">Korea, Democratic People's Republic of</option>
+                  <option value="KR">Korea, Republic of</option>
+                  <option value="KW">Kuwait</option>
+                  <option value="KG">Kyrgyzstan</option>
+                  <option value="LA">Lao People's Democratic Republic</option>
+                  <option value="LV">Latvia</option>
+                  <option value="LB">Lebanon</option>
+                  <option value="LS">Lesotho</option>
+                  <option value="LR">Liberia</option>
+                  <option value="LY">Libya</option>
+                  <option value="LI">Liechtenstein</option>
+                  <option value="LT">Lithuania</option>
+                  <option value="LU">Luxembourg</option>
+                  <option value="MO">Macao</option>
+                  <option value="MK">Macedonia, the former Yugoslav Republic of</option>
+                  <option value="MG">Madagascar</option>
+                  <option value="MW">Malawi</option>
+                  <option value="MY">Malaysia</option>
+                  <option value="MV">Maldives</option>
+                  <option value="ML">Mali</option>
+                  <option value="MT">Malta</option>
+                  <option value="MH">Marshall Islands</option>
+                  <option value="MQ">Martinique</option>
+                  <option value="MR">Mauritania</option>
+                  <option value="MU">Mauritius</option>
+                  <option value="YT">Mayotte</option>
+                  <option value="MX">Mexico</option>
+                  <option value="FM">Micronesia, Federated States of</option>
+                  <option value="MD">Moldova, Republic of</option>
+                  <option value="MC">Monaco</option>
+                  <option value="MN">Mongolia</option>
+                  <option value="ME">Montenegro</option>
+                  <option value="MS">Montserrat</option>
+                  <option value="MA">Morocco</option>
+                  <option value="MZ">Mozambique</option>
+                  <option value="MM">Myanmar</option>
+                  <option value="NA">Namibia</option>
+                  <option value="NR">Nauru</option>
+                  <option value="NP">Nepal</option>
+                  <option value="NL">Netherlands</option>
+                  <option value="NC">New Caledonia</option>
+                  <option value="NZ">New Zealand</option>
+                  <option value="NI">Nicaragua</option>
+                  <option value="NE">Niger</option>
+                  <option value="NG">Nigeria</option>
+                  <option value="NU">Niue</option>
+                  <option value="NF">Norfolk Island</option>
+                  <option value="MP">Northern Mariana Islands</option>
+                  <option value="NO">Norway</option>
+                  <option value="OM">Oman</option>
+                  <option value="PK">Pakistan</option>
+                  <option value="PW">Palau</option>
+                  <option value="PS">Palestinian Territory, Occupied</option>
+                  <option value="PA">Panama</option>
+                  <option value="PG">Papua New Guinea</option>
+                  <option value="PY">Paraguay</option>
+                  <option value="PE">Peru</option>
+                  <option value="PH">Philippines</option>
+                  <option value="PN">Pitcairn</option>
+                  <option value="PL">Poland</option>
+                  <option value="PT">Portugal</option>
+                  <option value="PR">Puerto Rico</option>
+                  <option value="QA">Qatar</option>
+                  <option value="RE">Réunion</option>
+                  <option value="RO">Romania</option>
+                  <option value="RU">Russian Federation</option>
+                  <option value="RW">Rwanda</option>
+                  <option value="BL">Saint Barthélemy</option>
+                  <option value="SH">Saint Helena, Ascension and Tristan da Cunha</option>
+                  <option value="KN">Saint Kitts and Nevis</option>
+                  <option value="LC">Saint Lucia</option>
+                  <option value="MF">Saint Martin (French part)</option>
+                  <option value="PM">Saint Pierre and Miquelon</option>
+                  <option value="VC">Saint Vincent and the Grenadines</option>
+                  <option value="WS">Samoa</option>
+                  <option value="SM">San Marino</option>
+                  <option value="ST">Sao Tome and Principe</option>
+                  <option value="SA">Saudi Arabia</option>
+                  <option value="SN">Senegal</option>
+                  <option value="RS">Serbia</option>
+                  <option value="SC">Seychelles</option>
+                  <option value="SL">Sierra Leone</option>
+                  <option value="SG">Singapore</option>
+                  <option value="SX">Sint Maarten (Dutch part)</option>
+                  <option value="SK">Slovakia</option>
+                  <option value="SI">Slovenia</option>
+                  <option value="SB">Solomon Islands</option>
+                  <option value="SO">Somalia</option>
+                  <option value="ZA">South Africa</option>
+                  <option value="GS">South Georgia and the South Sandwich Islands</option>
+                  <option value="SS">South Sudan</option>
+                  <option value="ES">Spain</option>
+                  <option value="LK">Sri Lanka</option>
+                  <option value="SD">Sudan</option>
+                  <option value="SR">Suriname</option>
+                  <option value="SJ">Svalbard and Jan Mayen</option>
+                  <option value="SZ">Swaziland</option>
+                  <option value="SE">Sweden</option>
+                  <option value="CH">Switzerland</option>
+                  <option value="SY">Syrian Arab Republic</option>
+                  <option value="TW">Taiwan, Province of China</option>
+                  <option value="TJ">Tajikistan</option>
+                  <option value="TZ">Tanzania, United Republic of</option>
+                  <option value="TH">Thailand</option>
+                  <option value="TL">Timor-Leste</option>
+                  <option value="TG">Togo</option>
+                  <option value="TK">Tokelau</option>
+                  <option value="TO">Tonga</option>
+                  <option value="TT">Trinidad and Tobago</option>
+                  <option value="TN">Tunisia</option>
+                  <option value="TR">Turkey</option>
+                  <option value="TM">Turkmenistan</option>
+                  <option value="TC">Turks and Caicos Islands</option>
+                  <option value="TV">Tuvalu</option>
+                  <option value="UG">Uganda</option>
+                  <option value="UA">Ukraine</option>
+                  <option value="AE">United Arab Emirates</option>
+                  <option value="GB">United Kingdom</option>
+                  <option value="US">United States</option>
+                  <option value="UM">United States Minor Outlying Islands</option>
+                  <option value="UY">Uruguay</option>
+                  <option value="UZ">Uzbekistan</option>
+                  <option value="VU">Vanuatu</option>
+                  <option value="VE">Venezuela, Bolivarian Republic of</option>
+                  <option value="VN">Viet Nam</option>
+                  <option value="VG">Virgin Islands, British</option>
+                  <option value="VI">Virgin Islands, U.S.</option>
+                  <option value="WF">Wallis and Futuna</option>
+                  <option value="EH">Western Sahara</option>
+                  <option value="YE">Yemen</option>
+                  <option value="ZM">Zambia</option>
+                  <option value="ZW">Zimbabwe</option>
+                </select>
+              </div>
+            </div>
+            <div class="slds-grid slds-p-bottom_small">
+              <div class="slds-form-element slds-size_1-of-3 slds-p-right_x-small" style="margin-top:0">
+                <label class="slds-form-element__label" for="input-unique-id"> Primary Email ID
+                  <abbr class="slds-required" title="required">*</abbr>
+                </label>
+                <input type="email" id="input-01" value="zural143@gmail.com" class="slds-input" /> </div>
+              <div class="slds-form-element slds-size_1-of-3 slds-p-right_x-small" style="margin-top:0">
+                <label class="slds-form-element__label" for="input-02">Secondary Email ID</label>
+                <input type="text" id="input-02" value="secondary@test.com" class="slds-input"
+                /> </div>
+              <div class="slds-form-element slds-size_1-of-3 slds-p-right_x-small" style="margin-top:0">
+                <label class="slds-form-element__label" for="input-unique-id">Parent Email ID </label>
+                <input type="text" id="input-01" value="parentemail@test.com" class="slds-input"
+                /> </div>
+            </div>
+            <div class="slds-grid ">
+              <div class="slds-form-element slds-size_1-of-3 slds-p-right_x-small" style="margin-top:0">
+                <label class="slds-form-element__label" for="input-unique-id"> Landline/Main Phone
+                  <abbr class="slds-required" title="required">*</abbr>
+                </label>
+                <input type="number" id="input-01" value="9865437303" class="slds-input" /> </div>
+              <div class="slds-form-element slds-size_1-of-3 slds-p-right_x-small" style="margin-top:0">
+                <label class="slds-form-element__label" for="input-02">Mobile Phone</label>
+                <input type="number" id="input-02" value="9998887776" class="slds-input" /> </div>
+              <div class="slds-form-element slds-size_1-of-3 slds-p-right_x-small" style="margin-top:0">
+                <label class="slds-form-element__label" for="input-unique-id">Other Phone </label>
+                <input type="text" id="input-01" value="9998885556" class="slds-input" /> </div>
+            </div>
+          </div>
+          <div class="slds-path__keys slds-form slds-form_stacked  slds-p-top_none">
+            <div class="slds-grid slds-p-bottom_small">
+              <div class="slds-form-element slds-size_1-of-1 slds-p-right_x-small" style="margin-top:0">
+                <label class="slds-form-element__label" for="input-unique-id"> Enter the ID number of the Account </label>
+                <input type="number" id="input-01" value="9865437303" class="slds-input"
+                /> </div>
+            </div>
+            <div class="slds-grid  slds-p-bottom_small">
+              <div class="slds-form-element slds-size_1-of-2  slds-p-right_x-small" style="margin-top:0">
+                <label class="slds-form-element__label" for="input-03">Passport Type</label>
+                <select class="slds-select" id="select-01" required="">
+                  <option value="passport">Diplomatic Passport</option>
+                </select>
+              </div>
+              <div class="slds-form-element slds-size_1-of-2" style="margin-top:0">
+                <label class="slds-form-element__label" for="input-unique-id">Passport Number </label>
+                <input type="text" id="input-01" value="HYDA06153811" class="slds-input" /> </div>
+            </div>
+            <div class="slds-grid">
+              <div class="slds-form-element slds-size_1-of-2  slds-p-right_x-small" style="margin-top:0">
+                <label class="slds-form-element__label" for="input-03">Passport Issue Date</label>
+                <input type="date" id="input-02" class="slds-input" /> </div>
+              <div class="slds-form-element slds-size_1-of-2  slds-p-right_x-small" style="margin-top:0">
+                <label class="slds-form-element__label" for="input-03">Passport Expiry Date</label>
+                <input type="date" id="input-02" class="slds-input" /> </div>
+            </div>
+          </div>
+        </div>
+        <div class="slds-path__coach slds-grid ">
+          <div class="slds-path__keys slds-form slds-form_stacked ">
+            <button class="slds-button slds-button_stateful slds-not-selected slds-button_brand" aria-live="assertive">
+              <span class="slds-text-not-selected">
+                <svg class="slds-button__icon_stateful slds-button__icon_left" aria-hidden="true">
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#back"
+                  /> </svg>Back</span>
+            </button>
+            <button class="slds-button slds-button_stateful slds-not-selected slds-button_brand" aria-live="assertive">
+              <span class="slds-text-not-selected">
+                <svg class="slds-button__icon_stateful slds-button__icon_left" aria-hidden="true">
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#chevronright"
+                  /> </svg>Continue</span>
+            </button>
+          </div>
+        </div>
       </div>
-      <div aria-labelledby="path-4" class="slds-path__content slds-hide" id="path-content-4" role="tabpanel">
-        <h2>Path 4 Content</h2>
-      </div>
-      <div aria-labelledby="path-5" class="slds-path__content slds-hide" id="path-content-5" role="tabpanel">
-        <h2>Path 5 Content</h2>
+      <div aria-labelledby="path-4" class="slds-path__content slds-show" id="path-content-3" role="tabpanel">
+        <div class="slds-path__coach slds-grid">
+          <div class="slds-path__keys slds-size_1-of-1">
+            <div class="slds-grid slds-grid_align-spread slds-path__coach-title">
+              <h2>Personalize your booking/course information details</h2>
+              <button class="slds-button slds-button_reset slds-text-body_small">Edit</button>
+            </div>
+          </div>
+        </div>
+        <div class="slds-path__coach slds-grid">
+          <div class="slds-path__keys slds-form slds-form_stacked slds-p-top_none">
+            <div class="slds-form slds-form_compound">
+              <fieldset class="slds-form-element">
+                <div class="slds-form-element__group">
+                  <div class="slds-grid  slds-p-bottom_small">
+                    <div class="slds-form-element slds-size_1-of-3 slds-p-right_x-small" style="margin-top:0">
+                      <label class="slds-form-element__label" for="input-unique-id">Booking Code
+                        <abbr class="slds-required" title="required">*</abbr>
+                      </label>
+                      <input type="text" id="input-01" value="B10200" class="slds-input" /> </div>
+                    <div class="slds-form-element slds-size_1-of-3 slds-p-right_x-small" style="margin-top:0">
+                      <label class="slds-form-element__label" for="input-03">Booking Channel
+                        <abbr class="slds-required" title="required">*</abbr>
+                      </label>
+                      <select class="slds-select" id="select-01" required="">
+                        <option value="Email">Email</option>
+                        <option value="ExhibitionFair">ExhibitionFair</option>
+                        <option value="Internet">Internet</option>
+                        <option value="Mail">Mail</option>
+                        <option value="Phone">Phone</option>
+                        <option value="Visit">Visit</option>
+                      </select>
+                    </div>
+                    <div class="slds-form-element slds-size_1-of-3 " style="margin-top:0">
+                      <label class="slds-form-element__label" for="input-02">Booking School</label>
+                      <input type="text" id="input-02" value="XYZ_SCHOOL" class="slds-input" /> </div>
+                  </div>
+                  <div class="slds-grid slds-p-bottom_small">
+                    <div class="slds-form-element slds-size_1-of-3 slds-p-right_x-small" style="margin-top:0">
+                      <label class="slds-form-element__label" for="input-unique-id">Sales office </label>
+                      <input type="text" id="input-01" value="Prepopulated_Data" disabled class="slds-input"
+                      /> </div>
+                    <div class="slds-form-element slds-size_1-of-3 slds-p-right_x-small" style="margin-top:0">
+                      <label class="slds-form-element__label" for="input-03">Brochure </label>
+                      <input type="text" id="input-01" value="WelcomeBrochure.pdf" disabled class="slds-input"
+                      /> </div>
+                    <div class="slds-form-element slds-size_1-of-3 " style="margin-top:0">
+                      <label class="slds-form-element__label" for="input-02">Brochure Season</label>
+                      <input type="text" id="input-01" value="ValueFromPrice" disabled class="slds-input"
+                      /> </div>
+                  </div>
+                  <div class="slds-grid  slds-p-bottom_small">
+                    <div class="slds-form-element slds-size_1-of-2 slds-p-right_x-small" style="margin-top:0">
+                      <label class="slds-form-element__label" for="input-03">Currency
+                        <abbr class="slds-required" title="required">*</abbr>
+                      </label>
+                      <select class="slds-select" id="select-01" required="">
+                        <option value="USD" selected="selected">United States Dollars</option>
+                        <option value="EUR">Euro</option>
+                        <option value="GBP">United Kingdom Pounds</option>
+                        <option value="DZD">Algeria Dinars</option>
+                        <option value="ARP">Argentina Pesos</option>
+                        <option value="AUD">Australia Dollars</option>
+                        <option value="ATS">Austria Schillings</option>
+                        <option value="BSD">Bahamas Dollars</option>
+                        <option value="BBD">Barbados Dollars</option>
+                        <option value="BEF">Belgium Francs</option>
+                        <option value="BMD">Bermuda Dollars</option>
+                        <option value="BRR">Brazil Real</option>
+                        <option value="BGL">Bulgaria Lev</option>
+                        <option value="CAD">Canada Dollars</option>
+                        <option value="CLP">Chile Pesos</option>
+                        <option value="CNY">China Yuan Renmimbi</option>
+                        <option value="CYP">Cyprus Pounds</option>
+                        <option value="CSK">Czech Republic Koruna</option>
+                        <option value="DKK">Denmark Kroner</option>
+                        <option value="NLG">Dutch Guilders</option>
+                        <option value="XCD">Eastern Caribbean Dollars</option>
+                        <option value="EGP">Egypt Pounds</option>
+                        <option value="FJD">Fiji Dollars</option>
+                        <option value="FIM">Finland Markka</option>
+                        <option value="FRF">France Francs</option>
+                        <option value="DEM">Germany Deutsche Marks</option>
+                        <option value="XAU">Gold Ounces</option>
+                        <option value="GRD">Greece Drachmas</option>
+                        <option value="HKD">Hong Kong Dollars</option>
+                        <option value="HUF">Hungary Forint</option>
+                        <option value="ISK">Iceland Krona</option>
+                        <option value="INR">India Rupees</option>
+                        <option value="IDR">Indonesia Rupiah</option>
+                        <option value="IEP">Ireland Punt</option>
+                        <option value="ILS">Israel New Shekels</option>
+                        <option value="ITL">Italy Lira</option>
+                        <option value="JMD">Jamaica Dollars</option>
+                        <option value="JPY">Japan Yen</option>
+                        <option value="JOD">Jordan Dinar</option>
+                        <option value="KRW">Korea (South) Won</option>
+                        <option value="LBP">Lebanon Pounds</option>
+                        <option value="LUF">Luxembourg Francs</option>
+                        <option value="MYR">Malaysia Ringgit</option>
+                        <option value="MXP">Mexico Pesos</option>
+                        <option value="NLG">Netherlands Guilders</option>
+                        <option value="NZD">New Zealand Dollars</option>
+                        <option value="NOK">Norway Kroner</option>
+                        <option value="PKR">Pakistan Rupees</option>
+                        <option value="XPD">Palladium Ounces</option>
+                        <option value="PHP">Philippines Pesos</option>
+                        <option value="XPT">Platinum Ounces</option>
+                        <option value="PLZ">Poland Zloty</option>
+                        <option value="PTE">Portugal Escudo</option>
+                        <option value="ROL">Romania Leu</option>
+                        <option value="RUR">Russia Rubles</option>
+                        <option value="SAR">Saudi Arabia Riyal</option>
+                        <option value="XAG">Silver Ounces</option>
+                        <option value="SGD">Singapore Dollars</option>
+                        <option value="SKK">Slovakia Koruna</option>
+                        <option value="ZAR">South Africa Rand</option>
+                        <option value="KRW">South Korea Won</option>
+                        <option value="ESP">Spain Pesetas</option>
+                        <option value="XDR">Special Drawing Right (IMF)</option>
+                        <option value="SDD">Sudan Dinar</option>
+                        <option value="SEK">Sweden Krona</option>
+                        <option value="CHF">Switzerland Francs</option>
+                        <option value="TWD">Taiwan Dollars</option>
+                        <option value="THB">Thailand Baht</option>
+                        <option value="TTD">Trinidad and Tobago Dollars</option>
+                        <option value="TRL">Turkey Lira</option>
+                        <option value="VEB">Venezuela Bolivar</option>
+                        <option value="ZMK">Zambia Kwacha</option>
+                        <option value="EUR">Euro</option>
+                        <option value="XCD">Eastern Caribbean Dollars</option>
+                        <option value="XDR">Special Drawing Right (IMF)</option>
+                        <option value="XAG">Silver Ounces</option>
+                        <option value="XAU">Gold Ounces</option>
+                        <option value="XPD">Palladium Ounces</option>
+                        <option value="XPT">Platinum Ounces</option>
+                      </select>
+                    </div>
+                    <div class="slds-form-element slds-size_1-of-2 " style="margin-top:0">
+                      <label class="slds-form-element__label" for="input-02">Sales Made by</label>
+                      <input type="text" id="input-02" value="john.smith" class="slds-input" /> </div>
+                  </div>
+                </div>
+              </fieldset>
+            </div>
+          </div>
+          <div class="slds-path__keys slds-form slds-form_stacked  slds-p-top_none">
+            <div class="slds-form slds-form_compound">
+              <fieldset class="slds-form-element">
+                <div class="slds-form-element__group">
+                  <div class="slds-form-element__row">
+                    <div class="slds-form-element slds-size_1-of-1">
+                      <label class="slds-form-element__label" for="input-03">Special Requirements</label>
+                      <textarea id="textarea-id-01" rows="7" class="slds-textarea" placeholder="Student has any special requirements"></textarea> </div>
+                  </div>
+                </div>
+              </fieldset>
+            </div>
+          </div>
+        </div>
+        <div class="slds-path__coach slds-grid ">
+          <div class="slds-path__keys slds-form slds-form_stacked ">
+            <button class="slds-button slds-button_stateful slds-not-selected slds-button_brand" aria-live="assertive">
+              <span class="slds-text-not-selected">
+                <svg class="slds-button__icon_stateful slds-button__icon_left" aria-hidden="true">
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#back"
+                  /> </svg>Back</span>
+            </button>
+            <button class="slds-button slds-button_stateful slds-not-selected slds-button_brand" aria-live="assertive">
+              <span class="slds-text-not-selected">
+                <svg class="slds-button__icon_stateful slds-button__icon_left" aria-hidden="true">
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#check"
+                  /> </svg>Submit</span>
+            </button>
+          </div>
+        </div>
       </div>
     </div>
   </div>
